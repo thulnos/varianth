@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Sayfası</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="comics.html">Koleksiyon</a></li>
-                <li><a href="form.html">İletişim</a></li>
-                <li><a href="about.html">Hakkımda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>İLETİŞİM FORMU</h1>
-            <form>
-                <table border="1">
-                    <tr>
-                        <td>Adınız:</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Soyadınız:</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>E-mail:</td>
-                        <td><input type="email"></td>
-                    </tr>
-                    <tr>
-                        <td>Telefon:</td>
-                        <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                        <td>Departman:</td>
-                        <td>
-                            <select>
-                                <option>Bilgisayar Mühendisliği</option>
-                                <option>Makine Mühendisliği</option>
-                                <option>Biyokimya Mühendisliği</option>
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-                Aranmak istiyorum: <input type="radio" name="sec">Evet <input type="radio" name="sec">Hayır
-                <br><input type="submit" value="Gönder">            <input type="reset" value="Sıfırla">
-                <br>  <input type="color" id="favcolor" name="favcolor">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Oğuz Baran Öter - Varianth Projesi</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Sayfası</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="main-nav">
+                <div class="nav-left">
+                    <button class="hamburger-button" id="toggleMenu">
+                        &#9776;
+                    </button>
+
+                    <a href="index.html" class="varianth-link">
+                        <img src="img/varianth-symbol.svg" alt="Varianth Logo" class="varianth-symbol">
+                        <img src="img/varianth-text.svg" alt="Variant Text Logo" class="varianth-text">
+                    </a>
+                </div>
+
+                <ul class="nav-links" id="navList">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="comics.html">Koleksiyon</a></li>
+                    <li><a href="form.html">İletişim</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Görüşlerinizi Bildirin</h1>
+                <form class="feedback-form">
+                    <div class="form-element">
+                        <label for="firstName">Adınız:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Clark">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="lastName">Soyadınız:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Kent">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email">E-postanız:</label>
+                        <input type="email" id="email" name="email" placeholder="clarkkent@dailybugle.com">
+                    </div>
+
+                    <div class="form-element">
+                        <label for="message">Görüşlerinizi bildirin:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Görüşlerinizi buraya yazın..."></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Gönder" class="submit-button">
+                        <input type="reset" value="Sıfırla" class="reset-button">
+                    </div>
+               </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Oğuz Baran Öter - Varianth Projesi</p>
+        </footer>
+    </body>
 </html>

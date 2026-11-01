@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varianth - Ana Sayfa</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="comics.html">Koleksiyon</a></li>
-                <li><a href="form.html">İletişim</a></li>
-                <li><a href="about.html">Hakkımda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Çizgi Roman Koleksiyonu</h1>
-            <p>Çizgi roman koleksiyonunu takip et, okumak istediklerini ve okuduklarını işaretle ve puanla.</p>
-            <img src="img/DC_Comics_logo.svg" alt="DC Logo" width = "32">
-            <img src="img/marvel.svg" alt="Marvel Logo" width="96">
-        </section>
-    </main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Varianth - Ana Sayfa</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="main-nav">
+                <div class="nav-left">
+                    <button class="hamburger-button" id="toggleMenu">
+                        &#9776;
+                    </button>
 
-    <footer>
-        <p>&copy; 2026 Oğuz Baran Öter - Varianth Projesi</p>
-    </footer>
-</body>
+                    <a href="index.html" class="varianth-link">
+                        <img src="img/varianth-symbol.svg" alt="Varianth Logo" class="varianth-symbol">
+                        <img src="img/varianth-text.svg" alt="Variant Text Logo" class="varianth-text">
+                    </a>
+                </div>
+
+                <ul class="nav-links" id="navList">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="comics.html">Koleksiyon</a></li>
+                    <li><a href="form.html">İletişim</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Varianth</h1>
+                <p>Çizgi roman koleksiyonunu takip et, okumak istediklerini ve okuduklarını işaretle ve puanla.</p>
+                <div class="comic-brands">
+                    <img src="img/DC_Comics_logo.svg" alt="DC Logo" class="brand-logo">
+                    <img src="img/marvel.svg" alt="Marvel Logo" class="brand-logo">
+                    <img src="img/Image_Comics_logo.svg" alt="Image Comics Logo" class="brand-logo">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Oğuz Baran Öter - Varianth Projesi</p>
+        </footer>
+    </body>
 </html>

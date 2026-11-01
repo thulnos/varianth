@@ -1,48 +1,170 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koleksiyon</title>
-</head>
-<body>
-    <!-- Yapılacaklar: -->
-    <!-- İsmin altında seri isimleri yer alacak (tek sayı olsalar bile). -->
-    <!-- Tıklandığında serinin kendi sayfasına atacak. Sayılar orada görünecek, her sayı kendi puanına sahip. -->
-    <!--     Her serinin kendi sayfası olması ayrı ayrı HTML anlamına mı geliyor? Evetse uzun vadede inefektif olma ihtimali var. Üstüne düşünmek lazım. -->
-    <!-- Sayılar ve seriler ayrı ayrı silme butonuna sahip olacak. -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="comics.html">Koleksiyon</a></li>
-                <li><a href="form.html">İletişim</a></li>
-                <li><a href="about.html">Hakkımda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1>Çizgi Roman Koleksiyonu</h1>
-            <div id="library-area" class="library-matrix">
-                <!-- Şu an bulunan <article>'lar örnekten ibaret. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Koleksiyon</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="main-nav">
+                <div class="nav-left">
+                    <button class="hamburger-button" id="toggleMenu">
+                        &#9776;
+                    </button>
 
-                <article class="cover-card">
-                    <a href="detay.html">
-                        <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                    <a href="index.html" class="varianth-link">
+                        <img src="img/varianth-symbol.svg" alt="Varianth Logo" class="varianth-symbol">
+                        <img src="img/varianth-text.svg" alt="Variant Text Logo" class="varianth-text">
                     </a>
-                </article>
-                <article class="cover-card">
-                    <a href="detay.html">
-                        <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
-                    </a>
-                </article>
-            </div>
-        </section>
-    </main>
+                </div>
 
-    <footer>
-        <p>&copy; 2026 Oğuz Baran Öter - Varianth Projesi</p>
-    </footer>
-</body>
+                <ul class="nav-links" id="navList">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="comics.html">Koleksiyon</a></li>
+                    <li><a href="form.html">İletişim</a></li>
+                    <li><a href="about.html">Hakkımda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>Kitaplığın</h1>
+                <div id="library-area" class="library-matrix">
+                    <!-- Şu an bulunan <article>'lar örnekten ibaret. -->
+
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
+                        </a>
+                    </article>
+                    <article class="cover-card">
+                        <a href="detay.html">
+                            <img src="img/example_cover_2.jpg" alt="Örnek Çizgi Roman 2" width="150">
+                        </a>
+                    </article>
+
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Oğuz Baran Öter - Varianth Projesi</p>
+        </footer>
+    </body>
 </html>
