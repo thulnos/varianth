@@ -4,7 +4,7 @@
 
 ## Haftalık Videolar
 
-[Google Drive]https://drive.google.com/drive/folders/1MhHuIXU_VnvkK_m-Xjc2MJU7GW-qQaod?usp=sharing
+[Google Drive](https://drive.google.com/drive/folders/1MhHuIXU_VnvkK_m-Xjc2MJU7GW-qQaod?usp=sharing)
 
 ## Teknolojiler
 
