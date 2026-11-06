@@ -2,6 +2,10 @@
 
 > Çizgi roman estetiğine sahip, kişisel bir kütüphane arayüzü.
 
+## Haftalık Videolar
+
+[Google Drive]https://drive.google.com/drive/folders/1MhHuIXU_VnvkK_m-Xjc2MJU7GW-qQaod?usp=sharing
+
 ## Teknolojiler
 
 ![HTML5](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=5c5c5c&color=e34f26&logoColor=ffffff&label=%20&style=for-the-badge)
