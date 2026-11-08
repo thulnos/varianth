@@ -10,6 +10,7 @@
 
 ![HTML5](https://img.shields.io/static/v1?message=HTML&logo=html5&labelColor=5c5c5c&color=e34f26&logoColor=ffffff&label=%20&style=for-the-badge)
 ![CSS](https://img.shields.io/static/v1?message=CSS&logo=css&labelColor=5c5c5c&color=663399&logoColor=ffffff&label=%20&style=for-the-badge)
+![JavaScript](https://img.shields.io/static/v1?message=JavaScript&logo=javascript&labelColor=5c5c5c&color=f7df1e&logoColor=ffffff&label=%20&style=for-the-badge)
 
 ## Çalıştırma 
 

@@ -8,27 +8,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header>
             <nav class="main-nav">
-                <div class="nav-left">
+                <div class="nav-menu">
                     <button class="hamburger-button" id="toggleMenu">
                         &#9776;
                     </button>
 
-                    <a href="index.html" class="varianth-link">
-                        <img src="img/varianth-symbol.svg" alt="Varianth Logo" class="varianth-symbol">
-                        <img src="img/varianth-text.svg" alt="Variant Text Logo" class="varianth-text">
-                    </a>
+                    <ul class="nav-links" id="navList">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="comics.html">Koleksiyon</a></li>
+                        <li><a href="form.html">İletişim</a></li>
+                        <li><a href="about.html">Hakkımda</a></li>
+                    </ul>
                 </div>
 
-                <ul class="nav-links" id="navList">
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="comics.html">Koleksiyon</a></li>
-                    <li><a href="form.html">İletişim</a></li>
-                    <li><a href="about.html">Hakkımda</a></li>
-                </ul>
+                <a href="index.html" class="varianth-link">
+                    <img src="img/varianth-symbol.svg" alt="Varianth Logo" class="varianth-symbol">
+                    <img src="img/varianth-text.svg" alt="Variant Text Logo" class="varianth-text">
+                </a>
             </nav>
         </header>
         <main>

@@ -52,6 +52,15 @@ footer {
     margin-top: 100px;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--main-bg);
+}
+
 .main-nav {
     display: flex;
     justify-content: space-between;
@@ -59,10 +68,80 @@ footer {
     padding: 10px 30px;
 }
 
-.nav-left {
+.nav-menu {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
+}
+
+.hamburger-button {
+    font-size: 2rem;
+    color: var(--text-main);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.hamburger-button:hover {
+    color: var(--accent-2);
+    transform: rotate(-90deg);
+}
+
+.hamburger-button:active {
+    transform: scale(90%) rotate(-90deg);
+}
+
+.nav-links li {
+    flex: 1;
+}
+
+.nav-links li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+    border-bottom: 1px solid var(--card-bg);
+    
+}
+
+.nav-links li:last-child a {
+    border-bottom: none;
+}
+
+nav ul li a {
+    color: var(--text-accent);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: var(--accent-2);
+}
+
+.nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: calc(100vh - 60px);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links.active {
+    transform: translateX(0);
 }
 
 .varianth-link {
@@ -85,51 +164,6 @@ footer {
     height: 28px;
     width: auto;
 }
-
-.hamburger-button {
-    font-size: 2rem;
-    color: var(--text-main);
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition: all 0.2s ease;
-}
-
-.hamburger-button:hover {
-    color: var(--accent-2);
-    transform: rotate(-90deg);
-}
-
-.hamburger-button:active {
-    transform: scale(90%) rotate(-90deg);
-}
-
-nav ul li a {
-    color: var(--text-accent);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.2s ease;
-}
-
-nav ul li a:hover{
-    color: var(--accent-2);
-}
-
-.nav-links {
-    display: flex;
-    /* display: none; */
-    flex-direction: row; /* column ile değişecek */
-    gap: 15px;
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
-/* .nav-links.active { */
-/*     display: flex; */
-/* } */
 
 /* GLOBAL END*/
 
