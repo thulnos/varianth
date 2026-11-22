@@ -36,7 +36,7 @@
                 <h1>Kitaplığın</h1>
                 <div id="library-area" class="library-matrix">
                     <!-- Şu an bulunan <article>'lar örnekten ibaret. -->
-
+                    <button type="button" id="openPopupButton" class="add-comic-card" aria-label="Çizgi roman ekle">+</button>
                     <article class="cover-card">
                         <a href="detay.html">
                             <img src="img/example_cover_1.jpg" alt="Örnek Çizgi Roman 1" width="150">
@@ -161,6 +161,52 @@
 
                 </div>
             </section>
+            <div id="comicPopup" class="popup-menu">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <h2>Çizgi Roman Ekle</h2>
+                        <button type="button" id="closePopupButton" class="close-popup-button" aria-label="Kapat">&times;</button>
+                    </div>
+                    
+                    <div class="popup-body">
+                        <div class="cover-preview">
+                            <span class="preview-label">CANLI KAPAK ÖNİZLEMESİ</span>
+                            <div class="cover-preview-card">
+                                <img id="previewImage" src="" alt="Kapak önizlemesi">
+                                <div id="previewPlaceholder" class="preview-placeholder">
+                                    <span>Kapak URL'si girildiğinde burada görünecek</span>
+                                </div>
+                                <div class="preview-overlay">
+                                    <h3 id="previewTitle">Çizgi Roman İsmi</h3>
+                                    <p id="previewAuthor">Yazar</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <form id="addComic" class="comic-form">
+                        <div class="form-element">
+                            <label for="comicTitle">Çizgi Roman İsmi:</label>
+                            <input type="text" id="comicTitle" name="comicTitle" placeholder="Örn: Absolute Batman" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="comicAuthor">Yazar:</label>
+                            <input type="text" id="comicAuthor" name="comicAuthor" placeholder="Örn: Scott Snyder" required>
+                        </div>
+
+                        <div class="form-element">
+                            <label for="comicCover">Kapak Resmi İçin Kaynak(URL veya Dosya Yolu):</label>
+                            <input type="text" id="comicCover" name="comicCover" placeholder="img/example.jpg veya https://..." required>
+                        </div>
+                        
+                        <div class="form-buttons">
+                            <button type="submit" class="submit-button">Ekle</button>
+                            <button type="button" id="cancelPopup" class="reset-button">İptal</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
